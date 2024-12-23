@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Tareas</h1>
+    </header>
+    <main>
+        <section id="nueva-tarea">
+            <input type="text" id="descripcion-tarea" placeholder="Descripción de la tarea">
+            <button id="agregar-tarea">Agregar</button>
+        </section>
+        <section id="resumen">
+            <h2>Resumen de Tareas</h2>
+            <p>Total de tareas: <span id="total-tareas">0</span></p>
+            <p>Tareas realizadas: <span id="tareas-realizadas">0</span></p>
+        </section>
+        <section id="lista-tareas">
+            <h2>Lista de Tareas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th>Realizada</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="tareas"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
